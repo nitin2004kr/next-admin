@@ -1,7 +1,7 @@
 import styles from "./search.module.css";
 import { IoSearch } from "react-icons/io5";
 
-const Search = ({placeholder}) => {
+const Search = ({ placeholder }) => {
   return (
     <div className={styles.container}>
       <IoSearch style={{ color: "#fff" }} size={"14"} />

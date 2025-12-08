@@ -1,0 +1,29 @@
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 3px 8px;
+    background-color: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+
+.prev{
+    background-color: #ffffff85;
+}
+
+
+.next {
+    background-color: #fff;
+}
