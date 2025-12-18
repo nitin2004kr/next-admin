@@ -2,13 +2,16 @@ import Search from "@/app/ui/dashboard/search/search";
 import styles from "../../ui/dashboard/users/users.module.css";
 import Image from "next/image";
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
+import Link from "next/link";
 
 const Users = () => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <Search placeholder={"search for user..."} />
+        <Link href={'/dashboard/users/add'}>
         <button className={styles.addUser}>Add New</button>
+        </Link>
       </div>
 
       <table className={styles.table}>

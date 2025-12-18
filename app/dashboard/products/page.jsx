@@ -2,13 +2,16 @@ import Search from "@/app/ui/dashboard/search/search";
 import styles from "../../ui/dashboard/products/products.module.css";
 import Image from "next/image";
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
+import Link from "next/link";
 
 const Products = () => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <Search placeholder={"search for prodicts..."} />
-        <button className={styles.addUser}>Add New</button>
+        <Link href="/dashboard/products/add">
+          <button className={styles.addUser}>Add New</button>
+        </Link>
       </div>
 
       <table className={styles.table}>
@@ -47,8 +50,12 @@ const Products = () => {
             <td>220</td>
             <td>
               <div className={styles.action}>
-                <button className={`${styles.viewBtn} ${styles.btn}`}>View</button>
-                <button className={`${styles.deleteBtn} ${styles.btn}`}>Delete</button>
+                <button className={`${styles.viewBtn} ${styles.btn}`}>
+                  View
+                </button>
+                <button className={`${styles.deleteBtn} ${styles.btn}`}>
+                  Delete
+                </button>
               </div>
             </td>
           </tr>
@@ -76,15 +83,19 @@ const Products = () => {
             <td>400</td>
             <td>
               <div className={styles.action}>
-                <button className={`${styles.viewBtn} ${styles.btn}`}>View</button>
-                <button className={`${styles.deleteBtn} ${styles.btn}`}>Delete</button>
+                <button className={`${styles.viewBtn} ${styles.btn}`}>
+                  View
+                </button>
+                <button className={`${styles.deleteBtn} ${styles.btn}`}>
+                  Delete
+                </button>
               </div>
             </td>
           </tr>
         </tbody>
       </table>
-     
-     <Pagination />
+
+      <Pagination />
     </div>
   );
 };
