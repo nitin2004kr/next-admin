@@ -1,3 +1,11 @@
 .container {
     
 }
+
+.imageCon {
+    flex: 1;
+    background-color: var(--bgSoft);
+    height: 500px;
+    width: 500px;
+    border-radius: 8px;
+}
